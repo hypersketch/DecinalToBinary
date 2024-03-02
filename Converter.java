@@ -13,19 +13,21 @@ public class Converter {
 		quotient = 100;
 		
 		do {
-		System.out.println("Please input a number");
+		System.out.println("Please input a number and a base value");
 		number = input.nextInt();
 		base = input.nextInt();
 		
 		if(number <0 || base <2 || base >16)
 		{
-			System.out.println("Plases input a valid Input");
+			System.out.println("Plases input a positive number and a base between 2-16\n");
 		}
 		else valid = true;
 		}
 		while(valid == false);
 		
 		input.close();
+		
+		System.out.print("The equivalent base-"+base+" value of decimal "+number+" is: ");
 	
 		while(quotient !=0)
 		{
